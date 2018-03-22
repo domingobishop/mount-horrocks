@@ -1,0 +1,304 @@
+/*
+Theme Name:     Mount Horrocks v2
+Theme URI:      http://chrisbishop.me.uk/
+Description:    mounthorrocks.com - Child theme for the Twenty Thirteen theme 
+Author:         Chris Bishop
+Author URI:     http://chrisbishop.me.uk/
+Template:       twentythirteen
+Version:        0.2.0
+License:		Creative Commons Attribution-Share Alike 3.0 (http://creativecommons.org/licenses/by-sa/3.0/. Feel free to make any changes.
+*/
+
+@import url("../twentythirteen/style.css");
+
+/* @group Normalize */
+
+/* @end */
+
+/* =Global
+-------------------------------------------------------------- */
+
+.site, .navbar {max-width:100%;}
+.entry-meta, .entry-thumbnail, .post-navigation {display:none;}
+h1, h2, h3, h4 {color:#123c3d;}
+a:link, a:visited {
+	color: #91700C;
+}
+/* Remove automatic hyphens */
+p, ul, ol, dl, blockquote, .post-statement, .statement, h1, h2, h3, h4 {
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    hyphens: none;
+}
+
+/* =Header
+-------------------------------------------------------------- */
+
+.site-header {
+background-size: cover !important;
+height:180px;
+box-shadow: 2px 2px 5px #ccc;
+}
+
+.main-navigation {clear:none;}
+.navbar {background-color: transparent;margin-top: 70px;}
+.nav-menu li a {color:#123c3d;padding: 20px;}
+.nav-menu .current_page_item > a, .nav-menu .current_page_ancestor > a, .nav-menu .current-menu-item > a, .nav-menu .current-menu-ancestor > a, h3.menu-toggle {color: #123c3d;font-style:normal;font-weight:bold;}
+
+.logo-box {position:absolute;top:-70px;right:0;width:265px;z-index:99;}
+.logo-box img {padding:35px 25px 25px 25px;}
+
+.nav-menu li:hover > a, .nav-menu li a:hover {
+	background-color: #f8f7ed;
+	color: #222;
+}
+
+/* =Footer
+-------------------------------------------------------------- */
+
+.site-footer {background-color:#111;color:#eee;}
+.site-footer .sidebar-container {background-color: #f8f7ed;color:#222;}
+.site-footer .widget {color:#222;}
+.site-footer .widget-title, .site-footer .widget-title a, .site-footer .wp-caption-text {color:#444;}
+.site-footer .widget a {color:#444;}
+.logo-footer {
+	text-align: center;
+}
+
+/* =Sidebar
+-------------------------------------------------------------- */
+
+.widget {background-color:transparent;}
+.widget .widget-title {
+	font-family: Bitter, Georgia, serif;
+	font-style:normal;
+}
+.sidebar .site-footer .widget-area {
+	max-width: 1040px;
+	left: 0;
+}
+
+/* =Front page
+-------------------------------------------------------------- */
+
+.home .entry-header {display:none;}
+.home .entry-header, .home .entry-content, .home .entry-summary, .home .entry-meta {max-width:1040px;width:100%;padding:0 20px;}
+@media screen and (max-width:999px) {
+	.home .entry-header, .home .entry-content, .home .entry-summary, .home .entry-meta {
+		max-width:100%;
+	}
+}
+.home-block {
+	display: inline-block;
+	width: 30%;
+	margin-right: 3%;
+	background-color: #f8f7ed;
+	box-shadow: 3px 3px 5px #ccc;
+	min-height: 220px;
+	border: solid 1px #ededed;
+	padding: 7px;
+	float: left;
+}
+@media screen and (max-width:1370px) {
+	.home-block {
+		margin-top: 20px;
+	}
+}
+@media screen and (max-width:640px) {
+	.home-block {
+		width:100%;
+		margin-top: 20px;
+		margin-right:0;
+		min-height: 100px;
+	}
+}
+
+.front-page-banner {
+	width: 100%;
+	height: 360px;
+	background: url(http://www.mounthorrocks.com/wp-content/uploads/2013/11/image3.jpg) no-repeat scroll top;
+	background-size: cover;
+	padding:30px;
+}
+.front-page-banner h1, .front-page-banner h3 {
+	text-shadow: 2px 2px 5px #222;
+	color: #fff;
+	padding-right: 50%;
+}
+@media screen and (max-width:768px) {
+	.front-page-banner h1, .front-page-banner h3 {
+		padding-right: 0;
+	}
+}
+
+/* =Content
+-------------------------------------------------------------- */
+
+button, input[type="submit"], input[type="button"], input[type="reset"] {
+background:#444;
+border-bottom: 3px solid #222;
+}
+.page-id-9 .entry-content {padding:0;}
+.entry-content img.alignleft, .entry-content .wp-caption.alignleft {margin-left:0;}
+
+/* =FA
+-------------------------------------------------------------- */
+
+.fa_slider_simple.default {height:400px !important;}
+
+.fa_slider_simple .fa_image {
+	margin: 0px !important;
+	padding: 0px !important;
+	max-width: none !important;
+	min-width: 100%;
+	width: auto;
+	max-height: none !important;
+	min-height: 100%;
+	height: auto;
+	top: 0 !important;
+	right: 0 !important;
+	width: 0 !important;
+	height: auto !important;
+}
+.fa_slider_simple img.fa_slide_image {
+	max-width: 100% !important;
+	margin: 0 !important;
+}
+.fa_slider_simple.default .fa_slide_content h2 {
+	color: #fff !important;
+	-moz-text-shadow: 5px 1px 5px #000 !important;
+	-webkit-text-shadow: 5px 1px 5px #000 !important;
+	-o-text-shadow: 5px 1px 5px #000 !important;
+	-ms-text-shadow: 5px 1px 5px #000 !important;
+	text-shadow: 5px 1px 5px #000 !important;
+}
+.FA_overall_container_classic_responsive .FA_featured_articles .FA_article .FA_wrap {
+	padding: 0px !important;
+}
+.FA_overall_container_classic_responsive.light .FA_featured_articles .FA_article div.fa_content {font-size: 100% !important;line-height: normal;}
+.FA_overall_container_classic_responsive.light, .FA_overall_container_classic_responsive.light .FA_featured_articles .FA_article h2 {background-color:#123c3d !important;}
+.FA_overall_container_classic_responsive.light .FA_featured_articles .FA_article h2 {position:absolute;top:30px;left:50px;z-index:99;color:#fff !important;width:30%;padding:12px;}
+.FA_overall_container_classic_responsive.light .FA_featured_articles .FA_article a:hover.FA_read_more, .FA_overall_container_classic_responsive a img {display:none !important;}
+@media screen and (max-width:999px) {
+	.FA_overall_container_classic_responsive.light .FA_featured_articles .FA_article h2 {
+		width:50%;
+	}
+}
+@media screen and (max-width:640px) {
+	.FA_overall_container_classic_responsive.light .FA_featured_articles .FA_article h2 {
+		width:80%;
+	}
+}
+
+/* =catlist
+-------------------------------------------------------------- */
+.lcp_catlist {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.lcp_catlist h2, .lcp_catlist h3 {
+	border-top: solid 1px #ccc;
+}
+.lcp_title {
+	display: none;
+}
+.page ul.lcp_catlist li {
+	margin-bottom:10px;
+}
+
+/* =Wine
+-------------------------------------------------------------- */
+#wine {
+	width: 14%;
+	padding: 0;
+	vertical-align: top;
+}
+#wine h2 {
+	margin: 5px 5px 5px 5px;
+	text-align: left;
+	color: #123c3d;
+	font-size: 18px;
+}
+#wine p {
+	margin: 5px 5px 0 0;
+	padding: 0 0 0 5px;
+	text-align: left;
+	font-size: 12px;
+	line-height: 18px;
+	border-left-width:1px;
+	border-left-style:solid;
+	border-left-color:#ccc;
+}
+.grid {display:inline;float:left;margin-left:0;margin-right:0;}
+
+/* =Vineyard
+-------------------------------------------------------------- */
+#vineyard {
+	width: 249px;
+	padding: 0;
+	vertical-align: top;
+}
+#vineyard h2 {
+	margin: 20px 10px 5px 0;
+	text-align: left;
+	color: #123c3d;
+	font-size: 18px;
+}
+#vineyard p {
+	margin: 5px 30px 5px 0;
+	padding: 0 0 0 10px;
+	text-align: left;
+	font-size: 12px;
+	line-height: 18px;
+	border-left-width:1px;
+	border-left-style:solid;
+	border-left-color:#ccc;
+}
+
+/*
+Generalised theme compatibility fixes, the shopping cart does not need bullets
+*/
+
+li.widget_wp_shopping_cart ul {
+	list-style-image: none !important;
+	list-style-type: none !important;
+}
+
+li.widget_wp_shopping_cart ul li {
+	list-style-image: none !important;
+	list-style-type: none !important;
+	background: none !important;
+}
+
+li.widget_wp_shopping_cart ul li:before{
+	/* Countermand any content properties like the one in the default wordpress theme.  */
+	content: "" !important;
+}
+
+
+div.categorydisplay ul li:before{
+	/* Countermand any content properties like the one in the default wordpress theme.  */
+	content: "" !important;
+}
+
+a.additional_description_link img {
+	margin:0px 3px 0px 0px;
+}
+
+div.textcol form {
+	min-width: 300px;
+}
+
+div.wpsc_loading_animation {
+	visibility: hidden;
+}
+
+#idc-container-parent{
+	clear:both;
+
+}
+table.wpsc_checkout_table label{
+	display:inline;
+	padding-right:10px;
+}
