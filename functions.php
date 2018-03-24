@@ -1,5 +1,14 @@
 <?php
 
+function mh_styles() {
+    wp_register_style( 'bootstrap', get_stylesheet_directory_uri() . '/css/bootstrap.css.min', array(), '3.3.7', 'all' );
+    wp_register_style( 'google-fonts',
+        'https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic|Roboto+Slab:400,700', array(), 1.0, 'all' );
+    wp_enqueue_style( 'bootstrap' );
+    wp_enqueue_style( 'google-fonts' );
+}
+add_action( 'wp_enqueue_scripts', 'mh_styles' );
+
 if (function_exists('register_sidebar')) {
      register_sidebar(array(
       'name' => 'Shop Widget',
@@ -30,4 +39,3 @@ function my_password_form() {
 }
 add_filter( 'the_password_form', 'my_password_form' );
 
-?>
