@@ -6,26 +6,38 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area">
-    <div id="content" class="site-content" role="main">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
 
-        <?php while ( have_posts() ) : the_post(); ?>
+            <div id="primary" class="content-area">
+                <main id="content" class="site-content" role="main">
 
-            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                    <?php while ( have_posts() ) : the_post(); ?>
 
-                <div class="entry-content">
+                        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-                    <?php the_content(); ?>
+                            <div class="entry-header">
+                                <h1 class="entry-title"><?php the_title(); ?></h1>
+                            </div>
 
-                    <?php get_template_part( 'partials/home-boxes' ); ?>
+                            <div class="entry-content">
 
-                </div><!-- .entry-content -->
+                                <?php the_content(); ?>
 
-            </article><!-- #post -->
+                                <?php get_template_part( 'partials/home-boxes' ); ?>
 
-        <?php endwhile; ?>
+                            </div><!-- .entry-content -->
 
-    </div><!-- #content -->
-</div><!-- #primary -->
+                        </article><!-- #post -->
+
+                    <?php endwhile; ?>
+
+                </main><!-- #content -->
+            </div><!-- #primary -->
+
+        </div>
+    </div>
+</div>
 
 <?php get_footer(); ?>

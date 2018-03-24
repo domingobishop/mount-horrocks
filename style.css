@@ -81,7 +81,6 @@ box-shadow: 2px 2px 5px #ccc;
 /* =Front page
 -------------------------------------------------------------- */
 
-.home .entry-header {display:none;}
 .home .entry-header, .home .entry-content, .home .entry-summary, .home .entry-meta {max-width:1040px;width:100%;padding:0 20px;}
 @media screen and (max-width:999px) {
 	.home .entry-header, .home .entry-content, .home .entry-summary, .home .entry-meta {
